@@ -24,3 +24,39 @@ body{
 	padding: 2rem;
 	width: 100%;
 }
+.correct{
+	background: linear-gradient(32deg,rgba(4, 185, 4, 0.89) 0%,rgb(41,232,111) 100%);
+}
+.incorrect{
+	background: linear-gradient(32deg, rgba(224, 32, 6, 0.89) 0%, rgb(190, 14, 14) 100%);
+}
+@media screen and (max-width :760px){
+	.choice-container{
+		min-width: 40rem;
+	}
+}
+#hud{
+	display: flex;
+	justify-content: space-between;
+}
+.hud-prefix{
+	text-align: center;
+	font-size: 2rem;
+}
+.hud-main-text{
+	text-align: center;
+	
+}
+#progressBar{
+	width: 20rem;
+	height: 3rem;
+	border: 0.3rem solid green;
+	margin-top: 2rem;
+	border-radius: 50px;
+	overflow: hidden;
+}
+#progressBarfull{
+	height: 100%;
+	background: green;
+	width: 0%;
+}
