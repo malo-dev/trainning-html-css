@@ -7,20 +7,18 @@
 	<title>Document</title>
 </head>
 <body>
-	
+	<h1 id="title"></h1>
 	<script>
-		let max=0;
-		
-		const leader= ()=>{
-			for ( let i = 0; i < arguments.length; i++){
-				max += arguments[i];
-			}
-			
-		}
+	// JavaScript Callbacks
+	function displayresult (some){
+		document.getElementById("title").innerText=some
+	}
+	function calculate ( num1,num2,mycalback){
+		let sum = num1 + num2
+		mycalback(sum)
+	}		
+	calculate(5,9,displayresult)			
 
-		(function(){
-		  leader(1,2,3)	
-		})()
 	</script>
 </body>
 </html>
